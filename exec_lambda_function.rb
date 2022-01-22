@@ -5,6 +5,7 @@ require 'json'
 lambda_client = Aws::Lambda::Client.new(
   # https://github.com/aws/aws-sdk-ruby/blob/version-3/gems/aws-sdk-lambda/lib/aws-sdk-lambda/client.rb#L81
   http_open_timeout: 300,
+  http_read_timeout: 300,
 )
 response = lambda_client.invoke({
   function_name: "ruby-practice-dev-hello",

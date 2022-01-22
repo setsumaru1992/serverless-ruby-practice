@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "serverless-hooks-plugin": "^1.1.0",
     "serverless-ruby-layer": "^1.5.0"
   }
 }
