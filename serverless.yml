@@ -20,9 +20,9 @@ provider:
   environment: 
     COMMON_VAL: ${self:custom.environment.val}
   # 使用レイヤー指定欄
-  # layers:
-  #   - arn:aws:lambda:ap-northeast-1:241875560804:layer:ruby-practice-dev-ruby-bundle:20
-  #   - arn:aws:lambda:ap-northeast-1:241875560804:layer:ruby-practice-dev-chromedriver:2
+  layers:
+    - arn:aws:lambda:ap-northeast-1:241875560804:layer:building-ruby-lib-layer-dev-ruby-bundle:1
+    - arn:aws:lambda:ap-northeast-1:241875560804:layer:ruby-practice-dev-chromedriver:2
 
 custom: 
   environment: ${file(./env.yml)}

@@ -25,7 +25,7 @@ private
 def build_response(content)
   {
     statusCode: 200,
-    error_message: nil
+    error_message: nil,
     body: {
       message: content,
       # input: event

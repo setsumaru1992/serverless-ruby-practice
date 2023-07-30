@@ -24,9 +24,6 @@ CMD cp /tmp/chromedriver /opt/bin/ && \
     cp /usr/lib64/libX11.so.6 /opt/lib/ && \
     cp /usr/lib64/libxcb.so.1 /opt/lib/ && \
     cp /usr/lib64/libXau.so.6 /opt/lib/ && \
-    # Chrome v69-71のときのライブラリ
-    # cp /usr/lib64/libnss3.so /opt/lib/ && \
-    # libX11-xcb入れたい
     cp /usr/lib64/libX11-xcb.so.1 /opt/lib/ && \
     # 上記以外
     cp -r /tmp/vendor/bundle/ruby/2.7.0 /opt/ruby/gems
