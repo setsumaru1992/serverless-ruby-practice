@@ -1,0 +1,8 @@
+version: "3"
+services:
+  chromedriver:
+    container_name: chromedriver
+    build: .
+    command: "tail -f /etc/hosts"
+    volumes:
+      - ./build:/opt
