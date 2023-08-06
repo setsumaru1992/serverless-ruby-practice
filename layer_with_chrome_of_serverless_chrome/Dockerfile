@@ -10,8 +10,8 @@ RUN yum install -y unzip && \
 
 RUN yum install -y libX11
 
-ADD build/Gemfile Gemfile
-ADD build/Gemfile.lock Gemfile.lock
+ADD build_with_container/Gemfile Gemfile
+ADD build_with_container/Gemfile.lock Gemfile.lock
 RUN bundle install --path vendor/bundle
 
 RUN mkdir -p /opt/bin/swiftshader && \
