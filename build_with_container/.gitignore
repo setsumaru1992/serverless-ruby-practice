@@ -1,0 +1,6 @@
+/bin/*
+!/bin/.gitkeep
+/lib/*
+!/lib/.gitkeep
+/ruby/gems/*
+!/ruby/gems/.gitkeep

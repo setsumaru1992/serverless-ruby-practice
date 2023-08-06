@@ -79,7 +79,7 @@ module LambdaFunction
         client.open_timeout = 300
         client.read_timeout = 300
 
-        service = ::Selenium::WebDriver::Service.chrome(path: "#{LAMBDA_TASK_ROOT}/chromedriver")
+        service = ::Selenium::WebDriver::Service.chrome(path: "/opt/bin/chromedriver")
         ::Selenium::WebDriver.for(:chrome, options: options, http_client: client, service: service)
       end
     end

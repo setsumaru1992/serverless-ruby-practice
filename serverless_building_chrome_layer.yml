@@ -22,12 +22,12 @@ custom:
   hooks:
     before:deploy:deploy:
       - docker build -t chromedriver .
-      - docker run --rm -v "$PWD"/build:/opt chromedriver
+      - docker run --rm -v "$PWD"/build_with_container:/opt chromedriver
 
 # layer作成欄
 layers:
   chromedriver:
-    path: build
+    path: build_with_container
     name: ruby-practice-dev-chromedriver
     compatibleRuntimes:
       - ruby2.7
