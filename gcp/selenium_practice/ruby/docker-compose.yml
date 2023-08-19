@@ -1,0 +1,9 @@
+# Gemfile.lockを作るためだけの設定
+version: "3"
+services:
+  ruby:
+    image: ruby:3.2
+    volumes:
+      - .:/tmp
+    command: "bundle install"
+    working_dir: "/tmp"
